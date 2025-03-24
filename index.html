@@ -58,5 +58,35 @@
 
         <button class="btn-roll" onclick="rollDice()">Roll Dice</button>
     </div>
+
+    <script>
+        function rollDice(){
+          const min = 1;
+        const max = 6;
+  
+        const random = Math.floor(Math.random() * (max-min + 1)) + min;
+  
+        const diceImg = document.getElementById("dice-img");
+  
+        if(random==1){
+          diceImg.src="./image/dice rolled-1.png";
+        }
+        else if(random==2){
+          diceImg.src="./image/dice rolled-2.png";
+        }
+        else if(random==3){
+          diceImg.src="./image/dice rolled-3.png";
+        }
+        else if(random==4){
+          diceImg.src="./image/dice rolled-4.png";
+        }
+        else if(random==5){
+          diceImg.src="./image/dice rolled-5.png";
+        }
+        else if(random==6){
+          diceImg.src="./image/dice rolled-6.png";
+        }
+        }
+   </script>
 </body>
 </html>
